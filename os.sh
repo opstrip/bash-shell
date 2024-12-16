@@ -1,6 +1,6 @@
 #!/bin/bash
 ###################################################################
-# Description: Rocky 9/Debian 12/Ubuntu 24.04 initSystem.sh
+# Description: Rocky 9/Debian 12/Ubuntu 24.04 os.sh
 # Arch: rocky/debian/ubuntu/centos
 # Author: Jeff
 # Mail: shiyao.zh@gmail.com
@@ -8,7 +8,7 @@
 # Last Update: 2024.12.14
 # Version: 1.0.2
 ###################################################################
-# Usage: sh initSystem.sh [HOSTNAME]
+# Usage: sh os.sh [HOSTNAME]
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/snap/bin
 os=$(cat /etc/os-release 2>/dev/null | grep ^ID= | awk -F'[=\"]+' '{print $2}')
 
